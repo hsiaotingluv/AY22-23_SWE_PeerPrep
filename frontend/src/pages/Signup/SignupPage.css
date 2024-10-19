@@ -1,0 +1,74 @@
+.input {
+  border: 0;
+  background-color: #fff;
+  align-self: stretch;
+  position: relative;
+}
+.signup-button {
+  cursor: pointer;
+  border: 0;
+  padding: 16px 186px;
+  background-color: #1d4ed8;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 442px;
+}
+.signup-button:hover {
+  background-color: #173fab;
+}
+.signup-text {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+/* .signup-button:hover {
+  background-color: #173fab;
+} */
+.login-button {
+  cursor: pointer;
+  border: 0px solid #d1d5db;
+  padding: 12px 80px;
+  background-color: transparent;
+  flex: 1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+  width: 430px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* .login-button:hover {
+  background-color: #f7fafc;
+  border: 1px solid #1d4ed8;
+  box-sizing: border-box;
+  position: relative;
+} */
+.login-text {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Inter;
+  color: #1d4ed8;
+  text-align: left;
+  display: inline-block;
+}
+.signup-heading {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  width: 430px;
+  align-self: center;
+}

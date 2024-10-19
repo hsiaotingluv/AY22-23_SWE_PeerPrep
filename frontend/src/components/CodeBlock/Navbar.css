@@ -1,0 +1,14 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 50px;
+  text-align: center;
+  color: #000;
+  background-color: #1f2937;
+  gap: 20px;
+}
+
+.navbar-text{
+  color: #dbffda;
+}

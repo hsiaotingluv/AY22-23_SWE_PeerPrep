@@ -1,0 +1,59 @@
+name: Node.js CI / Heroku CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      # Continuous Delivery - Frontend
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "peerprep3219" #Must be unique in Heroku
+          heroku_email: "siddharth.srivastava.2024+cs3219@gmail.com"
+          appdir: frontend
+      # Continuous Delivery - User Service
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY_STAGE}}
+          heroku_app_name: "peerprep-cs3219-userservice" #Must be unique in Heroku
+          heroku_email: "shermannws@gmail.com"
+          appdir: user-service
+      # Continuous Delivery - Question Service
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY_STAGE}}
+          heroku_app_name: "peerprep-cs3219-qnservice" #Must be unique in Heroku
+          heroku_email: "shermannws@gmail.com"
+          appdir: question-service
+      # Continuous Delivery - Matching Service
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY_STAGE}}
+          heroku_app_name: "peerprep-cs3219-matchservice" #Must be unique in Heroku
+          heroku_email: "shermannws@gmail.com"
+          appdir: matching-service
+      # Continuous Delivery - History Service
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY_STAGE}}
+          heroku_app_name: "peerprep-cs3219-historyservice" #Must be unique in Heroku
+          heroku_email: "shermannws@gmail.com"
+          appdir: history-service
+      # Continuous Delivery - Session Service
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY_STAGE}}
+          heroku_app_name: "peerprep-cs3219-sessionservice" #Must be unique in Heroku
+          heroku_email: "shermannws@gmail.com"
+          appdir: session-service

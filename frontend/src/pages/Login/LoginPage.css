@@ -1,0 +1,130 @@
+.input {
+  border: 0;
+  background-color: #fff;
+  align-self: stretch;
+  position: relative;
+}
+.login-button-alt {
+  cursor: pointer;
+  border: 0;
+  padding: 16px 201.5px;
+  background-color: #1d4ed8;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.login-button-alt:hover {
+  background-color: #173fab;
+}
+.login-text-alt {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+.login-heading {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  width: 430px;
+  align-self: center;
+}
+.page {
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #1f2937;
+  font-family: Inter;
+  position: relative;
+  background-color: #010741;
+  display: flex;
+  flex-direction: row;
+}
+.background-image {
+  width: 50%;
+  height: 100vh;
+  background-image: url("../../../public/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  justify-content: center;
+  align-items: center;
+}
+.login-logo {
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+  object-fit: contain;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  min-width: 500px;
+  height: 100vh;
+  width: 50%;
+  float: left;
+}
+/* .forget-password-button {
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  padding: 12px 52px;
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+.signup-button-alt {
+  cursor: pointer;
+  border: 0px solid #d1d5db;
+  padding: 12px 80px;
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.signup-text-alt {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Inter;
+  color: #1d4ed8;
+  text-align: left;
+  display: inline-block;
+}
+/* .forget-password-text {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Inter;
+  color: #1d4ed8;
+  text-align: left;
+  display: inline-block;
+} */
+/* .signup-button-alt:hover,
+.forget-password-button:hover {
+  background-color: #f7fafc;
+  border: 1px solid #1d4ed8;
+  box-sizing: border-box;
+  position: relative;
+} */

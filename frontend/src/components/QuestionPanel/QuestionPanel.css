@@ -1,0 +1,9 @@
+.panel {  
+    flex: 1;
+    background-color: #fff;
+    gap: 37px;
+    text-align: left;
+    font-size: 30px;
+    font-family: Inter;
+    height: 100%;
+}

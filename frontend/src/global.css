@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-lilita-one: "Lilita One";
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-base: 24px;
+  --font-size-lg: 30px;
+  --font-size-xl: 32px;
+  --font-size-2xl: 40px;
+  --font-size-3xl: 48px;
+  --font-size-4xl: 58px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-grey: rgb(197, 197, 197);
+  --color-indigo-100: #0065ff;
+  --color-indigo-200: #1d4ed8;
+  --color-indigo-300: #0351c6;
+  --color-black: #000;
+  --color-gray-100: #1f2937;
+  --color-brown-100: #c21b1b;
+  --color-brown-hover: #881414;
+  --color-gold-100: #e9c423;
+  --color-gold-hover: #b19621;
+  --color-green-100: #389321;
+  --color-green-hover: #256115;
+
+  /* Gaps */
+  --gap-sm: 8px;
+  --gap-md: 30px;
+  --gap-lg: 60px;
+
+  /* Paddings */
+  --padding-2xs: 10px;
+  --padding-xs: 20px;
+  --padding-sm: 30px;
+  --padding-md: 36px;
+  --padding-lg: 50px;
+  --padding-xl: 72px;
+  --padding-2xl: 100px;
+
+  /* border radiuses */
+  --br-md: 20px;
+}

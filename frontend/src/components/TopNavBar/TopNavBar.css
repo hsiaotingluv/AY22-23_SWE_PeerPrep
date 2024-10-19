@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  align-self: stretch;
+  background-color: #1f2937;
+  padding: var(--padding-xs) 25px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.peerprep-div {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.menu-div {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0px;
+}
+
+.change-password-button,
+.log-out-button {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+}
+.change-password-button,
+.log-out-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: var(--font-inter);
+  color: var(--color-grey);
+  text-align: center;
+  flex-shrink: 0;
+}
+.change-password-button:hover,
+.log-out-button:hover {
+  color: var(--color-white);
+}
+.log-out-button {
+  width: 90px;
+}
